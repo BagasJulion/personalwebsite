@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bagas Julio Nugroho</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="shortcut icon" type="image/jpg" href="/bagas.png" />
+    <style>
+      /* Color Classes */
+      .bg-primary {
+        background-color: #1b1f24;
+      }
+      .bg-secondary {
+        background-color: #2a2f36;
+      }
+      .text-primary {
+        color: #ffffff;
+      }
+      .text-secondary {
+        color: #c3cad5;
+      }
+      .text-accent {
+        color: #13bbff;
+      }
+      .border-accent {
+        border-color: #13bbff;
+      }
+      .hover\:text-accent:hover {
+        color: #13bbff;
+      }
+      .hover\:bg-accent:hover {
+        background-color: #13bbff;
+      }
+      .hover\:text-primary:hover {
+        color: #ffffff;
+      }
+      .hover\:shadow-accent:hover {
+        box-shadow: 0 0 15px #13bbff;
+      }
+
+      /* Existing Animations */
+      .animate-slide-up {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.5s ease, transform 0.5s ease;
+      }
+      .animate-slide-up.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      .animate-fade-in {
+        opacity: 0;
+        transition: opacity 0.8s ease;
+      }
+      .animate-fade-in.visible {
+        opacity: 1;
+      }
+      .navbar-align {
+        align-items: baseline;
+      }
+    </style>
+  </head>
+  <body class="font-['Poppins'] text-primary bg-primary leading-relaxed">
+    <!-- Navbar -->
+    <nav id="navbar" class="w-full py-3 sm:py-4 fixed top-0 left-0 bg-primary z-50 shadow-md transition-all duration-300 animate-fade-in">
+      <div class="container mx-auto px-4 sm:px-6 md:px-10 lg:px-20 navbar-align">
+        <div class="flex justify-between items-center">
+          <div class="text-lg sm:text-xl font-semibold text-accent italic">Bagas Julio Nugroho</div>
+          <div class="sm:hidden">
+            <button id="menu-toggle" class="text-secondary text-xl">
+              <i class="ri-menu-line"></i>
+            </button>
+          </div>
+          <ul id="nav-menu" class="hidden sm:flex gap-4 sm:gap-6 text-xs sm:text-sm text-secondary">
+            <li><a href="#home" class="hover:text-accent transition">Home</a></li>
+            <li><a href="#work-experience" class="hover:text-accent transition">Work Experience</a></li>
+            <li><a href="#projects" class="hover:text-accent transition">Projects</a></li>
+            <li><a href="#skills" class="hover:text-accent transition">Skills</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="min-h-screen flex items-center py-12 sm:py-14 animate-slide-up">
+      <div class="container mx-auto px-4 sm:px-6 md:px-10 lg:px-20">
+        <div class="w-full max-w-3xl mx-auto">
+          <h4 class="text-base sm:text-lg font-medium mb-2 sm:mb-3">Hi, There!</h4>
+          <div class="flex flex-col">
+            <div class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.2] mb-2 sm:mb-3">I'm</div>
+            <ul class="dynamic-text mb-4 sm:mb-6">
+              <li id="typing-text" class="text-accent text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.2] whitespace-nowrap"></li>
+            </ul>
+          </div>
+          <p class="text-xs sm:text-sm font-normal text-secondary leading-4 sm:leading-5 md:leading-6 text-justify mb-4 sm:mb-6">
+            I graduated in Informatics from Universitas AMIKOM Yogyakarta with a solid foundation in IT Support, particularly in troubleshooting hardware and software, managing networks, and maintaining IT assets. Although I began my career
+            as a Frontend Developer, my interest in system infrastructure led me to shift my focus toward IT Support. I am passionate about optimizing IT systems to ensure stable and efficient operations, and I am committed to continuously
+            improving my skills to provide dependable and effective technical solutions.
+          </p>
+          <div class="social mb-4 sm:mb-6 flex gap-3 sm:gap-4">
+            <a href="https://github.com/BagasJulion" class="w-6 h-6 sm:w-8 sm:h-8 flex items-center justify-center text-accent rounded-full backdrop-brightness-90 text-base sm:text-lg transition-all duration-500 hover:shadow-accent">
+              <i class="ri-github-fill"></i>
+            </a>
+            <a href="https://linkedin.com/in/bagasjulion" class="w-6 h-6 sm:w-8 sm:h-8 flex items-center justify-center text-accent rounded-full backdrop-brightness-90 text-base sm:text-lg transition-all duration-500 hover:shadow-accent">
+              <i class="ri-linkedin-box-fill"></i>
+            </a>
+            <a href="https://www.instagram.com/bagassjnn/" class="w-6 h-6 sm:w-8 sm:h-8 flex items-center justify-center text-accent rounded-full backdrop-brightness-90 text-base sm:text-lg transition-all duration-500 hover:shadow-accent">
+              <i class="ri-instagram-fill"></i>
+            </a>
+            <a href="https://dribbble.com/bagasjulion" class="w-6 h-6 sm:w-8 sm:h-8 flex items-center justify-center text-accent rounded-full backdrop-brightness-90 text-base sm:text-lg transition-all duration-500 hover:shadow-accent">
+              <i class="ri-dribbble-line"></i>
+            </a>
+          </div>
+          <div class="flex flex-col sm:flex-row gap-3 sm:gap-4">
+            <a
+              href="https://wa.me/689647260662"
+              class="px-4 py-2 sm:px-5 sm:py-2.5 bg-accent text-primary border-2 border-accent rounded-lg text-xs sm:text-sm font-medium transition-all duration-500 hover:bg-transparent hover:text-accent hover:shadow-accent text-center"
+            >
+              Contact
+            </a>
+            <a
+              href="https://drive.google.com/file/d/1jlS19ysOegxWRbx9PlXdff2Spec6SZCH/view?usp=sharing"
+              class="px-4 py-2 sm:px-5 sm:py-2.5 bg-transparent text-accent border-2 border-accent rounded-lg text-xs sm:text-sm font-medium transition-all duration-500 hover:bg-accent hover:text-primary hover:shadow-accent text-center"
+            >
+              Download CV
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work Experience Section -->
+    <section id="work-experience" class="min-h-screen py-10 sm:py-14 animate-slide-up">
+      <div class="container mx-auto px-4 sm:px-6 md:px-10 lg:px-20">
+        <h2 class="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8 text-accent text-center">Work Experience</h2>
+        <div class="max-w-3xl mx-auto space-y-8 sm:space-y-10">
+          <!-- The Rasyiidu Center Yogyakarta -->
+          <div class="relative pl-6 sm:pl-8">
+            <h3 class="text-lg sm:text-xl font-bold text-accent mb-1 sm:mb-2">Jun 2024 – Now</h3>
+            <div class="bg-secondary p-4 sm:p-5 rounded-xl shadow-lg space-y-1 sm:space-y-2">
+              <p class="text-base sm:text-lg font-semibold text-primary">The Rasyiidu Center Yogyakarta</p>
+              <p class="text-accent font-medium text-xs sm:text-sm">IT Support</p>
+              <p class="text-xs text-justify sm:text-sm text-secondary leading-4 sm:leading-6">
+                • Managed the technical readiness of a web-based examination platform for psychotests, academic ability tests (TKA), and ANBK simulations. This included configuring login access, question display, and real-time monitoring
+                during implementation at partner schools. Responded promptly to issues to ensure smooth execution. <br />
+                • Handled the creation and maintenance of over 5,000 student accounts and 50+ school profiles, and assisted the academic team in entering and verifying test materials for elementary to senior high school levels, ensuring
+                structured and accurate content. <br />
+                • Provided technical support for the installation and maintenance of hardware (PCs, laptops), system configuration (OS and browsers), and network setup (Wi-Fi and LAN). Resolved issues efficiently, both remotely and onsite.
+                <br />
+                • Conducted comprehensive testing across multiple devices to ensure all platform features functioned properly, including login, timers, question navigation, scoring, and download processes. <br />
+                • Delivered technical guidance to school coordinators through WhatsApp groups, video tutorials, user manuals, and on-site support when needed. <br />
+                • Managed and organized test result data using Google Drive and Excel, ensuring timely report distribution and proper handling of makeup test participants.
+              </p>
+            </div>
+          </div>
+
+          <!-- The Alana Hotels and Convention Center Yogyakarta -->
+          <div class="relative pl-6 sm:pl-8">
+            <h3 class="text-lg sm:text-xl font-bold text-accent mb-1 sm:mb-2">May – Oct 2024</h3>
+            <div class="bg-secondary p-4 sm:p-5 rounded-xl shadow-lg space-y-1 sm:space-y-2">
+              <p class="text-base sm:text-lg font-semibold text-primary">The Alana Hotel and Convention Center</p>
+              <p class="text-accent font-medium text-xs sm:text-sm">IT Support</p>
+              <p class="text-xs sm:text-sm text-justify text-secondary leading-4 sm:leading-6">
+                • Provided daily technical support for 75 computers and other devices across the hotel, including installation and configuration of operating systems, office applications, antivirus software, and the Property Management
+                System (PMS). Performed software updates and replaced outdated equipment to maintain performance and ensure system security, supporting seamless interdepartmental operations. <br />
+                • Monitored internet and WiFi networks in both public areas (lobby, restaurant, meeting rooms) and private zones (guest rooms, VIP areas), resolving connectivity issues with an average response time of under 15 minutes.<br />
+                • Compiled daily reports on bandwidth usage, number of network users across different zones, and total data consumption (in GB) to analyze network performance and optimize hotel infrastructure needs. <br />
+                • Managed IT hardware and software inventory, including computers, printers, switches, access points, and CCTV systems. Conducted regular checks to ensure all equipment was operational and ready to support daily
+                operations.<br />
+                • Submitted biweekly evaluation reports to corporate management on hotel system status, focusing on network and IT performance as a basis for decision-making and continuous improvement. Coordinated with external vendors for
+                network and printer maintenance, and scheduled routine servicing to minimize operational disruptions.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="min-h-screen py-10 sm:py-14 animate-slide-up">
+      <div class="container mx-auto px-4 sm:px-6 md:px-10 lg:px-20">
+        <h2 class="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8 text-accent text-center">My Projects</h2>
+        <div id="project-container" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
+          <!-- Monitored IP TV Project -->
+          <div class="bg-secondary p-4 rounded-lg shadow-lg transition-all duration-300 animate-slide-up">
+            <img src="/monitoringproject.jpeg" alt="Project Image" class="w-full h-36 object-cover rounded-t-lg mt-4 mb-2" />
+            <h3 class="font-bold text-secondary mt-2 mb-2">Monitored IP TV Project</h3>
+            <p class="text-xs sm:text-sm text-secondary mb-2">
+              Conducting a comprehensive monitoring of the installation process for the IP TV system across all floors of Alana Hotel Yogyakarta, which includes managing switch connections and server room configurations to ensure seamless
+              integration and smooth functionality.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="px-2 py-1 bg-primary text-accent text-xs rounded">Network Configuration Monitoring</span>
+              <span class="px-2 py-1 bg-primary text-accent text-xs rounded">Project Oversight</span>
+              <span class="px-2 py-1 bg-primary text-accent text-xs rounded">Installation Completeness Monitoring</span>
+              <span class="px-2 py-1 bg-primary text-accent text-xs rounded">Team Coordination</span>
+              <span class="px-2 py-1 bg-primary text-accent text-xs rounded">Documentation</span>
+            </div>
+            <p class="text-xs sm:text-sm text-secondary mb-1">- Apologies, this cannot be displayed as it is a company document.</p>
+          </div>
+
+          <!-- Mapping Diagram -->
+          <div class="bg-secondary p-4 rounded-lg shadow-lg transition-all duration-300 animate-slide-up">
+            <img src="/diagrammapping.png" alt="Project Image" class="w-full h-36 object-cover rounded-t-lg mt-4 mb-2" />
+            <h3 class="font-bold text-secondary mt-2 mb-2">Mapping Diagram</h3>
+            <p class="text-xs sm:text-sm text-secondary mb-2">Developed a mapping diagram to outline the locations of access points, switches, cameras, and data outlets at Alana Hotel Yogyakarta.</p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="px-2 py-1 bg-primary text-accent text-xs rounded">Device Location Assessment</span>
+              <span class="px-2 py-1 bg-primary text-accent text-xs rounded">Strategic Point Placement</span>
+              <span class="px-2 py-1 bg-primary text-accent text-xs rounded">Diagram Visualization Development</span>
+              <span class="px-2 py-1 bg-primary text-accent text-xs rounded">Connectivity Validation</span>
+            </div>
+            <p class="text-xs sm:text-sm text-secondary mb-1">- Apologies, this cannot be displayed as it is a company document.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="min-h-screen py-10 sm:py-14 animate-slide-up">
+      <div class="container mx-auto px-4 sm:px-6 md:px-10 lg:px-20">
+        <h2 class="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8 text-accent text-center">Skills</h2>
+        <div class="max-w-3xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div class="bg-secondary p-4 rounded-lg shadow-lg transition-all duration-300 animate-slide-up">
+            <h3 class="text-base sm:text-lg font-semibold text-accent mt-1 mb-0.5">Technical Support</h3>
+            <p class="text-xs sm:text-sm text-secondary mb-0.5">Expertise in providing hardware and software troubleshooting, ensuring optimal system performance and user support.</p>
+          </div>
+          <div class="bg-secondary p-4 rounded-lg shadow-lg transition-all duration-300 animate-slide-up">
+            <h3 class="text-base sm:text-lg font-semibold text-accent mt-1 mb-0.5">Mikrotik</h3>
+            <p class="text-xs sm:text-sm text-secondary mb-0.5">Proficient in configuring and managing Mikrotik routers for network optimization and security.</p>
+          </div>
+          <div class="bg-secondary p-4 rounded-lg shadow-lg transition-all duration-300 animate-slide-up">
+            <h3 class="text-base sm:text-lg font-semibold text-accent mt-1 mb-0.5">Network Configuration</h3>
+            <p class="text-xs sm:text-sm text-secondary mb-0.5">Skilled in setting up and maintaining network infrastructures, including LAN and Wi-Fi systems.</p>
+          </div>
+          <div class="bg-secondary p-4 rounded-lg shadow-lg transition-all duration-300 animate-slide-up">
+            <h3 class="text-base sm:text-lg font-semibold text-accent mt-1 mb-0.5">System Troubleshooting</h3>
+            <p class="text-xs sm:text-sm text-secondary mb-0.5">Experienced in diagnosing and resolving complex system issues to ensure seamless operations.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="w-full py-4 sm:py-6 bg-secondary text-secondary text-center animate-fade-in">
+      <div class="container mx-auto px-4 sm:px-6 md:px-10 lg:px-20">
+        <p class="text-xs sm:text-sm">&copy; 2025 Bagas Julio Nugroho. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      // Typing Animation
+      const texts = ['IT Support', 'Network Administrator'];
+      const typingText = document.getElementById('typing-text');
+      let textIndex = 0;
+      let charIndex = 0;
+
+      function type() {
+        typingText.textContent = '';
+        charIndex = 0;
+        const currentText = texts[textIndex];
+
+        function typeCharacter() {
+          typingText.textContent += currentText.charAt(charIndex);
+          charIndex++;
+          if (charIndex < currentText.length) {
+            setTimeout(typeCharacter, 100);
+          } else {
+            textIndex = (textIndex + 1) % texts.length;
+            setTimeout(type, 2000);
+          }
+        }
+
+        typeCharacter();
+      }
+
+      type();
+
+      // Navbar Scroll Effect
+      const navbar = document.getElementById('navbar');
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+          navbar.classList.add('bg-secondary', 'shadow-lg');
+        } else {
+          navbar.classList.remove('bg-secondary', 'shadow-lg');
+        }
+      });
+
+      // Mobile Menu Toggle
+      const menuToggle = document.getElementById('menu-toggle');
+      const navMenu = document.getElementById('nav-menu');
+      if (menuToggle && navMenu) {
+        menuToggle.addEventListener('click', () => {
+          navMenu.classList.toggle('hidden');
+          navMenu.classList.toggle('flex');
+          navMenu.classList.toggle('flex-col');
+          navMenu.classList.toggle('absolute');
+          navMenu.classList.toggle('top-12');
+          navMenu.classList.toggle('left-0');
+          navMenu.classList.toggle('w-full');
+          navMenu.classList.toggle('bg-secondary');
+          navMenu.classList.toggle('p-3');
+        });
+      }
+
+      // Scroll Animations
+      const animateElements = document.querySelectorAll('.animate-slide-up, .animate-fade-in');
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+            }
+          });
+        },
+        { threshold: 0.1 }
+      );
+
+      animateElements.forEach((el) => observer.observe(el));
+    </script>
+  </body>
+</html>
